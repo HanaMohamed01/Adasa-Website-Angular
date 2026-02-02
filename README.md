@@ -1,8 +1,54 @@
-# PhotographyPage
+# عدسة (Adasah) - Photography Discovery Platform 📸
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+Welcome to **عدسة**, a premium photography discovery platform built with Angular. This project is a modern, responsive web application designed to showcase photography articles, categories, and professional insights with a stunning, high-fidelity user interface.
 
-## Development server
+## 🌟 Key Features
+
+### 1. **Premium Hero Section**
+
+- **Fluid Design**: A stunning dark-themed hero section with custom grid backgrounds and glassmorphism effects.
+- **Dynamic Content**: Arabic-first typography with polished animations and clear calls to action.
+- **Fully Responsive**: Optimized for all screen sizes using CSS `clamp()` and Bootstrap grid.
+
+### 2. **Interactive Category Stats**
+
+- Real-time data visualization showing article counts, reader stats, and more.
+- **Smart Layout**: Automatically adjusts grid columns based on screen size (e.g., maintaining 2 cards per row on mobile).
+- **Dynamic Icons**: Uses FontAwesome icons rendered dynamically.
+
+### 3. **Featured Articles Feed**
+
+- **Premium Article Cards**: Responsive horizontal cards with high-quality photography, reading time indicators, and author status dots.
+- **Dynamic Binding**: Powered by a structured data model providing titles, excerpts, and meta-information.
+- **RTL Support**: Fully localized and optimized for Right-to-Left (Arabic) layout.
+
+### 4. **Modern UI/UX**
+
+- **Responsive Navigation**: A clean, blurred navbar that provides a premium experience on both mobile and desktop.
+- **404 Custom Page**: A beautifully designed error page that keeps users engaged.
+- **Performance**: Built with Angular's latest features for speed and reliability.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Angular](https://angular.dev/) (Version 20)
+- **Styling**: [Vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) with modern features (clamp, variables, glassmorphism)
+- **UI Framework**: [Bootstrap 5](https://getbootstrap.com/)
+- **Icons**: [FontAwesome 6](https://fontawesome.com/) & [Bootstrap Icons](https://icons.getbootstrap.com/)
+- **Typography**: [Google Fonts - Tajawal](https://fonts.google.com/specimen/Tajawal)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed.
+- Angular CLI installed (`npm install -g @angular/cli`).
+
+### Installation
+
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+
+### Development Server
 
 To start a local development server, run:
 
@@ -10,50 +56,22 @@ To start a local development server, run:
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, navigate to `http://localhost:4200/`.
 
-## Code scaffolding
+### Deployment
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+To build for production:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## 📄 License
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+This project is for educational/assignment purposes as part of the Route Angular course.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+_Created with ❤️ for photography lovers._
