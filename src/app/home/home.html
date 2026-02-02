@@ -1,0 +1,45 @@
+<section class="mainHome container-fluid min-vh-100 p-0 bg-dark">
+  <div
+    class="bg-grid d-flex flex-column justify-content-center align-items-center text-center w-100 min-vh-100"
+  >
+    <div class="content w-100 py-3 px-3">
+      <span class="text-white badge fw-medium mb-3 mb-md-5 rounded-pill">
+        <i class="fa-solid fa-circle text-white ms-2"></i>
+        مرحباً بك في عدسة
+      </span>
+      <h1 class="text-white hero-title">
+        اكتشف <span>فن</span> التصوير الفوتوغرافي
+      </h1>
+      <p class="hero-desc">
+        انغمس في أسرار المحترفين ونصائح عملية لتطوير مهاراتك في التصوير.
+      </p>
+    </div>
+    <div
+      class="buttons mt-3 rounded-pill d-flex flex-wrap justify-content-center gap-3"
+    >
+      <button class="btn disButton rounded-pill text-white">
+        استكشف المقالات <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button class="btn moreButton rounded-pill text-white">
+        <i class="bi bi-exclamation-circle ms-2"></i>اعرف المزيد
+      </button>
+    </div>
+    <div class="container mb-5">
+      <div class="row justify-content-center">
+        @for (homeCategoryNumber of homeCategoryNumbers; track $index) {
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="cards mx-auto rounded-5 mt-5 text-center">
+              <div
+                [innerHTML]="homeCategoryNumber.icon"
+                class="mb-2 icon"
+              ></div>
+              <h3 class="fw-bold">{{ homeCategoryNumber.number }}</h3>
+              <p class="mb-1">{{ homeCategoryNumber.title }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+<app-homearticles [posts]="posts"></app-homearticles>

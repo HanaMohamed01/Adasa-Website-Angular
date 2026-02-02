@@ -1,0 +1,34 @@
+.bg-grid {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    #0b0b0b;
+  background-size: 30px 30px;
+}
+.blur-lg {
+  filter: blur(50px);
+}
+.homeButton {
+  background-color: #ed5e0e;
+  transition: all 0.3s;
+  color: white;
+}
+.homeButton:hover {
+  background-color: #ed5e0e;
+  transform: translateY(-3px);
+}
+.bg-color {
+  background-color: #ed5e0e;
+}
+.bgr-color {
+  background-color: #ed600e79;
+}
+.textColor {
+  color: #ed5e0e;
+}
+@media (max-width: 768px) {
+  .blur-lg {
+    width: 360px !important;
+    height: 360px !important;
+  }
+}

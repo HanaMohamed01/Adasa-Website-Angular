@@ -1,0 +1,59 @@
+nav .navTitle {
+  margin-bottom: -6px;
+  color: #d6d6d6;
+}
+.navbar {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 10px !important;
+}
+nav {
+  background-color: #16161679;
+  backdrop-filter: blur(5px);
+}
+.navbar-toggler {
+  font-size: 10px;
+  padding: 10px !important;
+}
+nav span {
+  color: #d17108;
+}
+nav ul {
+  padding-right: 5px;
+  background-color: #161616;
+}
+nav ul li a {
+  color: #9f9f9f;
+  padding: 5px 15px;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: #ffffff;
+}
+nav i {
+  cursor: pointer;
+}
+.search {
+  transition: all 0.3s;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search:hover {
+  background-color: #161616 !important;
+  color: #e67b0a !important;
+  padding: 15px 20px;
+  border-radius: 10%;
+  border: #77767442 1px solid;
+}
+nav button {
+  background-color: #ed5e0e;
+  color: #ffffff;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.active-link {
+  background-color: #fa5400;
+  color: #f3f3f3 !important;
+}
