@@ -34,40 +34,7 @@ Welcome to **عدسة**, a premium photography discovery platform built with Ang
 - **Styling**: [Vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) with modern features (clamp, variables, glassmorphism)
 - **UI Framework**: [Bootstrap 5](https://getbootstrap.com/)
 - **Icons**: [FontAwesome 6](https://fontawesome.com/) & [Bootstrap Icons](https://icons.getbootstrap.com/)
-- **Typography**: [Google Fonts - Tajawal](https://fonts.google.com/specimen/Tajawal)
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js and npm installed.
-- Angular CLI installed (`npm install -g @angular/cli`).
-
-### Installation
-
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
-
-### Development Server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, navigate to `http://localhost:4200/`.
-
-### Deployment
-
-To build for production:
-
-```bash
-ng build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
+- 
 ## 📄 License
 
 This project is for educational/assignment purposes as part of the Route Angular course.
