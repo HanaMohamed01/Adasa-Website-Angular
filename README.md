@@ -34,7 +34,6 @@ Welcome to **عدسة**, a premium photography discovery platform built with Ang
 - **Styling**: [Vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) with modern features (clamp, variables, glassmorphism)
 - **UI Framework**: [Bootstrap 5](https://getbootstrap.com/)
 - **Icons**: [FontAwesome 6](https://fontawesome.com/) & [Bootstrap Icons](https://icons.getbootstrap.com/)
-- 
 ## 📄 License
 
 This project is for educational/assignment purposes as part of the Route Angular course.
