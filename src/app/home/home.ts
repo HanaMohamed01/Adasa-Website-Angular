@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Homearticles } from '../homearticles/homearticles';
 import { Homecategories } from '../homecategories/homecategories';
-import { HomeCategory } from '../home-category';
+import { HomeCategories, HomeCategory } from '../home-category';
 import { PostsData } from '../posts-data';
 import { PostsList } from '../posts-list';
 
@@ -14,7 +14,7 @@ import { PostsList } from '../posts-list';
 export class Home implements OnInit {
   private postsService = inject(PostsData);
   posts: PostsList[] = [];
-  categories: any[] = [];
+  categories: HomeCategories[] = [];
 
   homeCategoryNumbers: HomeCategory[] = [
     {
@@ -44,3 +44,4 @@ export class Home implements OnInit {
     this.categories = this.postsService.categories;
   }
 }
+

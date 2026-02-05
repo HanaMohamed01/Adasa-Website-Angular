@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { PostsList } from './posts-list';
+import { HomeCategories } from './home-category';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PostsData {
-   posts: PostsList[] = [
+  posts: PostsList[] = [
     {
       id: 1,
       slug: 'mastering-golden-hour-photography',
@@ -621,7 +622,7 @@ export class PostsData {
     },
   ];
 
-  categories = [
+  categories: HomeCategories[] = [
     { name: 'إضاءة', count: 3, color: 'emerald' },
     { name: 'بورتريه', count: 3, color: 'purple' },
     { name: 'مناظر طبيعية', count: 2, color: 'blue' },
@@ -643,4 +644,3 @@ export class PostsData {
     },
   };
 }
-
