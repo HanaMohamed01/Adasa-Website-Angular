@@ -8,3 +8,9 @@ export interface HomeCategories {
   count: number;
   color: string;
 }
+export interface siteInfo {
+  title: string;
+  description: string;
+  keywords: string;
+  author: string;
+}

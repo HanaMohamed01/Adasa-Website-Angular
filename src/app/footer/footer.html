@@ -1,1 +1,143 @@
-<p>footer works!</p>
+<footer class="footer-bg pt-5 pb-3" dir="rtl">
+  <div class="container pt-2">
+    <div class="row g-4 justify-content-between mb-5">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div
+            class="footer-logo-box text-white d-flex align-items-center justify-content-center"
+          >
+            ع
+          </div>
+          <h2 class="fs-4 fw-bold text-white mb-0">{{ siteInfo?.name }}</h2>
+        </div>
+        <p
+          class="text-secondary extra-small line-height-1-8 text-opacity-75 mb-4"
+        >
+          {{ siteInfo?.description }}
+        </p>
+        <div class="social-links d-flex gap-2 pt-2">
+          <a
+            [href]="siteInfo?.social?.youtube"
+            class="social-btn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            [href]="siteInfo?.social?.linkedin"
+            class="social-btn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            [href]="siteInfo?.social?.github"
+            class="social-btn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            [href]="siteInfo?.social?.twitter"
+            class="social-btn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
+        <h5 class="section-heading text-white mb-4">استكشف</h5>
+        <ul class="list-unstyled footer-links p-0">
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-secondary extra-small"
+              >الرئيسية</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-secondary extra-small"
+              >المدونة</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-secondary extra-small"
+              >من نحن</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
+        <h5 class="section-heading text-white mb-4">التصنيفات</h5>
+        <ul class="list-unstyled footer-links p-0">
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-secondary extra-small"
+              >إضاءة</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-secondary extra-small"
+              >بورتريه</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-secondary extra-small"
+              >مناظر طبيعية</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-secondary extra-small"
+              >تقنيات</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <h5 class="section-heading text-white mb-4">ابقى على اطلاع</h5>
+        <p class="text-secondary extra-small mb-4">
+          اشترك للحصول على أحدث المقالات والتحديثات.
+        </p>
+        <form class="footer-subscribe d-flex flex-column gap-3">
+          <input
+            type="email"
+            class="form-control footer-input"
+            placeholder="أدخل بريدك الإلكتروني"
+          />
+          <button type="button" class="btn btn-orange-footer py-2 fw-bold">
+            اشترك
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="bottom-bar pt-4 mt-4 border-top border-secondary border-opacity-10"
+    >
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2 order-md-1">
+          <p class="text-secondary mb-0 extra-small opacity-50">
+            © 2026 {{ siteInfo?.name }}. صنع بكل
+            <i class="fa-solid fa-heart text-orange mx-1"></i> جميع الحقوق
+            محفوظة.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-start order-1 order-md-2 mb-3 mb-md-0">
+          <ul class="list-inline mb-0 extra-small">
+            <li class="list-inline-item ms-3">
+              <a href="#" class="text-decoration-none text-secondary opacity-50"
+                >سياسة الخصوصية</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-decoration-none text-secondary opacity-50"
+                >شروط الخدمة</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

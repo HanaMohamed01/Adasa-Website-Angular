@@ -1,1 +1,58 @@
-<p>homesubscribesection works!</p>
+<section class="subscribe-section py-5">
+  <div class="container d-flex justify-content-center">
+    <div
+      class="subscribe-container py-5 px-2 text-center position-relative overflow-hidden"
+    >
+      <div class="form-wrapper position-relative z-index-1">
+        <div
+          class="icon-box-envelope mx-auto mb-4 d-flex align-items-center justify-content-center"
+        >
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+
+        <h2 class="section-title text-white fw-bold mb-3">
+          اشترك في<span class="text-orange"> نشرتنا الإخبارية </span>
+        </h2>
+        <p class="text-secondary fs-5 mb-5">
+          احصل على نصائح التصوير الحصرية ودروس جديدة مباشرة في بريدك الإلكتروني
+        </p>
+
+        <form
+          class="subscribe-form mx-auto d-flex gap-3 justify-content-center mb-5"
+        >
+          <input
+            type="email"
+            class="form-control email-input text-end"
+            placeholder="أدخل بريدك الإلكتروني"
+          />
+          <button
+            type="button"
+            routerLink=""
+            class="btn btn-orange px-3 fw-bold"
+          >
+            اشترك الآن
+          </button>
+        </form>
+
+        <div
+          class="footer-stats d-flex align-items-center justify-content-center gap-3 text-secondary extra-small"
+        >
+          <div class="avatars-stack d-flex">
+            @for (image of images.slice(0, 4); track $index) {
+              <img
+                src="{{ image.image }}"
+                alt="Member"
+                class="avatar-sm rounded-circle border border-dark"
+              />
+            }
+          </div>
+          <span>انضم لـ <b>+10,000</b> مصور</span>
+          <span class="separator">•</span>
+          <span>بدون إزعاج</span>
+          <span class="separator">•</span>
+          <span>إلغاء الاشتراك في أي وقت</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

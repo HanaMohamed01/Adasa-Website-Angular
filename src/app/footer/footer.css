@@ -1,0 +1,119 @@
+.footer-bg {
+  background-color: #111111;
+}
+.footer-logo-box {
+  width: 42px;
+  height: 42px;
+  background-color: #ed5e0e;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(237, 94, 14, 0.3);
+}
+.line-height-1-8 {
+  line-height: 1.8;
+}
+.extra-small {
+  font-size: 0.8rem;
+}
+.social-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+.social-btn:hover {
+  background-color: #ed5e0e;
+  color: white;
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(237, 94, 14, 0.2);
+}
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.section-heading::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #ed5e0e;
+  margin-left: 15px;
+}
+.footer-links li {
+  margin-bottom: 12px;
+}
+.footer-links a {
+  transition: all 0.3s ease;
+}
+.footer-links a:hover {
+  color: #ed5e0e !important;
+  padding-right: 5px;
+}
+.footer-input {
+  background-color: #0d0d0d !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  padding: 12px 20px !important;
+  color: white !important;
+  font-size: 0.85rem;
+  text-align: right;
+}
+.footer-input:focus {
+  border-color: #ed5e0e !important;
+  box-shadow: none !important;
+}
+.btn-orange-footer {
+  background-color: #ed5e0e;
+  border-radius: 30px;
+  color: white;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 0.95rem;
+}
+.btn-orange-footer:hover {
+  background-color: #ff7c30;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(237, 94, 14, 0.3);
+}
+.text-orange {
+  color: #ed5e0e;
+}
+@media (max-width: 991px) {
+  .section-heading::after {
+    margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .footer-bg {
+    text-align: center;
+  }
+  .section-heading {
+    justify-content: center;
+  }
+  .section-heading::after {
+    display: none;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .footer-logo-box {
+    margin-right: 0;
+  }
+  .d-flex.align-items-center {
+    justify-content: center;
+  }
+}

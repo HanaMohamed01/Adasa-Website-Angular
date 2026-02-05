@@ -1,1 +1,96 @@
-<p>homelatestarticles works!</p>
+<section class="latestarticles py-5">
+  <div class="container mb-5">
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-end">
+        <div class=" mb-4">
+          <span class="latest-badge rounded-pill px-2 py-1 ">
+                        <i class="fa-solid fa-circle ms-1 small text-orange"></i>
+
+            الأحدث
+          </span>
+        </div>
+        <h2 class="section-title text-white fw-bold mb-2">أحدث المقالات</h2>
+        <p class="section-subtitle text-secondary">
+          محتوى جديد طازج من المطبعة
+        </p>
+      </div>
+      <div class="col-md-6 text-start">
+        <a href="#" class="view-all-link text-decoration-none">
+          عرض جميع المقالات
+          <i class="fa-solid fa-arrow-left ms-1"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      @for (post of latestarticles; track post.id) {
+        @if (post.featured) {
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="article-card h-100 rounded-4 overflow-hidden border border-secondary border-opacity-10 bg-dark-card"
+            >
+              <div class="card-image-wrapper position-relative">
+                <img
+                  [src]="post.image"
+                  [alt]="post.title"
+                  class="card-img-top custom-card-img"
+                />
+                <div
+                  class="category-tag position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small"
+                >
+                  {{ post.category }}
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <div
+                  class="meta-info d-flex align-items-center gap-3 mb-3 text-secondary small"
+                >
+                  <span>
+                    <i class="fa-regular fa-clock me-1"></i>
+                    {{ post.readTime }}
+                  </span>
+                  <span class="dot"></span>
+                  <span>
+                    <i class="fa-regular fa-calendar me-1"></i>
+                    {{ post.date }}
+                  </span>
+                </div>
+                <h3 class="post-title text-white fw-bold mb-3">
+                  {{ post.title }}
+                </h3>
+                <p class="post-excerpt text-secondary small mb-4 excerpt-clamp">
+                  {{ post.excerpt }}
+                </p>
+
+                <div
+                  class="card-footer-custom d-flex align-items-center justify-content-between mt-auto pt-3 border-top border-secondary border-opacity-10"
+                >
+                  <div class="author-info d-flex align-items-center gap-2">
+                    <img
+                      [src]="post.author.avatar"
+                      [alt]="post.author.name"
+                      class="author-avatar rounded-circle"
+                    />
+                    <div class="author-text">
+                      <p class="author-name text-white mb-0 fw-bold small">
+                        {{ post.author.name }}
+                      </p>
+                      <p class="author-role text-secondary mb-0 extra-small">
+                        {{ post.author.role }}
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    class="action-btn d-flex align-items-center justify-content-center rounded-circle"
+                  >
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+  </div>
+</section>

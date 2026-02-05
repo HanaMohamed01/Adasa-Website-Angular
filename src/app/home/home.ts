@@ -4,10 +4,17 @@ import { Homecategories } from '../homecategories/homecategories';
 import { HomeCategories, HomeCategory } from '../home-category';
 import { PostsData } from '../posts-data';
 import { PostsList } from '../posts-list';
+import { Homelatestarticles } from '../homelatestarticles/homelatestarticles';
+import { Homesubscribesection } from '../homesubscribesection/homesubscribesection';
 
 @Component({
   selector: 'app-home',
-  imports: [Homearticles, Homecategories],
+  imports: [
+    Homearticles,
+    Homecategories,
+    Homelatestarticles,
+    Homesubscribesection,
+  ],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -15,7 +22,6 @@ export class Home implements OnInit {
   private postsService = inject(PostsData);
   posts: PostsList[] = [];
   categories: HomeCategories[] = [];
-
   homeCategoryNumbers: HomeCategory[] = [
     {
       number: `50+`,
@@ -38,10 +44,8 @@ export class Home implements OnInit {
       title: 'كاتب',
     },
   ];
-
   ngOnInit(): void {
     this.posts = this.postsService.posts;
     this.categories = this.postsService.categories;
   }
 }
-
