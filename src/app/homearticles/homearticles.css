@@ -6,6 +6,7 @@
     rgba(21, 14, 10, 1) 90%
   );
   min-height: 80vh;
+  border-bottom: #7a797838 1px solid;
 }
 .text-orange {
   color: #ed5e0e;
