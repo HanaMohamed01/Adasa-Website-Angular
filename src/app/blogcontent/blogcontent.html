@@ -1,0 +1,139 @@
+<section class="blog-content">
+  <div class="container">
+    <div
+      class="filter-bar d-flex justify-content-between align-items-center mb-5"
+    >
+      <div class="categories-tabs d-flex gap-2">
+        @for (tab of categories; track tab) {
+          <button
+            (click)="filterByCategory(tab)"
+            [class.active]="selectedCategory === tab"
+            class="cat-tab"
+          >
+            {{ tab }}
+          </button>
+        }
+      </div>
+      <div class="search-box position-relative">
+        <input
+          type="text"
+          [(ngModel)]="searchQuery"
+          (input)="onSearchChange()"
+          placeholder="ابحث في المقالات..."
+          class="search-input"
+        />
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </div>
+
+    <div
+      class="sub-header d-flex justify-content-between align-items-center mb-4"
+    >
+      <div class="breadcrumbs">
+        <span>عرض <i class="fas fa-chevron-left mx-2 small"></i> مقالات</span>
+      </div>
+      <div class="view-toggles d-flex gap-2">
+        <button
+          (click)="setViewMode('list')"
+          [class.active]="viewMode === 'list'"
+          class="view-btn"
+        >
+         <i class="fa-solid fa-bars"></i>
+        </button>
+        <button
+          (click)="setViewMode('grid')"
+          [class.active]="viewMode === 'grid'"
+          class="view-btn"
+        >
+         <i class="fa-solid fa-grip"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="posts-grid" [ngClass]="viewMode + '-view'">
+      @for (post of paginatedPosts; track post.id) {
+        <div class="post-card">
+          <div class="card-image-wrap">
+            <img [src]="post.image" [alt]="post.title" class="card-img" />
+            <span class="category-badge">{{ post.category }}</span>
+          </div>
+          <div class="card-body">
+            <div class="post-meta d-flex gap-3 mb-2">
+              <span><i class="far fa-clock ml-1"></i> {{ post.readTime }}</span>
+              <span
+                ><i class="far fa-calendar ml-1"></i>
+                {{ post.date | date: "yyyy/MM/dd" }}</span
+              >
+            </div>
+            <h3 class="post-title">{{ post.title }}</h3>
+            <p class="post-excerpt">{{ post.excerpt }}</p>
+            <div
+              class="post-footer d-flex justify-content-between align-items-center mt-4"
+            >
+              <div class="author-info d-flex align-items-center gap-2">
+                <img
+                  [src]="post.author.avatar"
+                  [alt]="post.author.name"
+                  class="author-avatar"
+                />
+                <div class="author-text">
+                  <span class="author-name d-block">{{
+                    post.author.name
+                  }}</span>
+                  <span class="author-role small text-muted">{{
+                    post.author.role
+                  }}</span>
+                </div>
+              </div>
+              <button class="arrow-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+            </div>
+            @if (viewMode === "list") {
+              <div class="read-more-list mt-4">
+                <a href="#" class="read-link"
+                  >اقرأ المقال <i class="fas fa-arrow-left mr-2"></i
+                ></a>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+
+    @if (totalPages > 1) {
+      <div class="pagination-wrap d-flex flex-column align-items-center mt-5">
+        <div class="pagination-controls d-flex gap-2 align-items-center mb-3">
+          <button
+            (click)="prevPage()"
+            [disabled]="currentPage === 1"
+            class="page-nav"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          @for (page of pageNumbers; track page) {
+            <button
+              (click)="goToPage(page)"
+              [class.active]="currentPage === page"
+              class="page-num"
+            >
+              {{ page }}
+            </button>
+          }
+
+          <button
+            (click)="nextPage()"
+            [disabled]="currentPage === totalPages"
+            class="page-nav"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+        </div>
+        <span class="page-info text-muted small"
+          >صفحة {{ currentPage }} من {{ totalPages }}</span
+        >
+      </div>
+    }
+  </div>
+</section>

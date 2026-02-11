@@ -1,5 +1,18 @@
 .footer-bg {
-  background-color: #111111;
+  background:
+    radial-gradient(
+      circle at 40% 60%,
+      rgba(255, 140, 0, 0.068),
+      transparent 40%
+    ),  
+    radial-gradient(
+      circle at 70% 90%,
+      rgba(255, 140, 0, 0.068),
+      transparent 40%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    #0b0b0b;
 }
 .footer-logo-box {
   width: 42px;

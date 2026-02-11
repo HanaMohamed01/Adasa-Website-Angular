@@ -1,0 +1,38 @@
+.hero-section {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255, 122, 0, 0.2), transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    #0a0a0a;
+  background-size:
+    auto,
+    50px 50px,
+    50px 50px,
+    auto;
+  color: #ffffff;
+  padding-block: 100px;
+}
+.hero-title {
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+.text-orange {
+  color: #ff7a00;
+}
+.hero-subtitle {
+  color: #9aa0a6;
+  font-size: 1.1rem;
+}
+.custom-badge {
+  padding: 6px 18px;
+  border-radius: 50px;
+  background: rgba(255, 122, 0, 0.08);
+  border: 1px solid rgba(255, 122, 0, 0.35);
+  color: #ff9a3c;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
