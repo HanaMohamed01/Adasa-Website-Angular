@@ -6,6 +6,7 @@ import { PostsData } from '../posts-data';
 import { PostsList } from '../posts-list';
 import { Homelatestarticles } from '../homelatestarticles/homelatestarticles';
 import { Homesubscribesection } from '../homesubscribesection/homesubscribesection';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ import { Homesubscribesection } from '../homesubscribesection/homesubscribesecti
     Homecategories,
     Homelatestarticles,
     Homesubscribesection,
-  ],
+    RouterLink
+],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
