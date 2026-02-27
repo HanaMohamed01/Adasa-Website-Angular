@@ -24,6 +24,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-bottom: #7a797838 1px solid;
 }
 
 .badge-about {
@@ -79,7 +80,6 @@
   transition: all 0.3s ease;
   height: 100%;
 }
-
 
 .stat-icon {
   font-size: 28px;

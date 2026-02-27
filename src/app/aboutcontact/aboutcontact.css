@@ -1,0 +1,58 @@
+.aboutContact {
+  background: linear-gradient(135deg, #ff5e00 0%, #ff7b00 100%);
+  border-radius: 0;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+.cta-subtitle {
+  font-size: 1.15rem;
+  max-width: 650px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.btn-outline-light-custom {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light-custom:hover {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #000000;
+}
+
+.btn-black-custom {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-black-custom:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-black-custom i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 2rem;
+  }
+}
