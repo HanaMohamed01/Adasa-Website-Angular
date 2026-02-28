@@ -4,7 +4,7 @@ Welcome to **عدسة**, a premium photography discovery platform built with Ang
 
 ## 📖 Table of Contents
 
-- [عدسة (Adasah) - Photography Discovery Platform 📸](#عدسة-adasah---photography-discovery-platform-)
+- [عدسة (Adasah) - Photography Discovery Platform 📸]
   - [📖 Table of Contents](#-table-of-contents)
   - [🖼️ Core Pages](#️-core-pages)
     - [1. **Home Page**](#1-home-page)
