@@ -94,7 +94,9 @@
             </div>
             @if (viewMode === "list") {
               <div class="read-more-list mt-4">
-                <a href="#" class="read-link"
+                <a
+                  [routerLink]="['/detailspage', post.article]"
+                  class="read-link"
                   >اقرأ المقال <i class="fas fa-arrow-left mr-2"></i
                 ></a>
               </div>
