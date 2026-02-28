@@ -2,9 +2,9 @@
   <div class="container mb-5">
     <div class="row align-items-center mb-4">
       <div class="col-md-6 text-end">
-        <div class=" mb-4">
-          <span class="latest-badge rounded-pill px-2 py-1 ">
-                        <i class="fa-solid fa-circle ms-1 small text-orange"></i>
+        <div class="mb-4">
+          <span class="latest-badge rounded-pill px-2 py-1">
+            <i class="fa-solid fa-circle ms-1 small text-orange"></i>
 
             الأحدث
           </span>
@@ -81,6 +81,7 @@
                     </div>
                   </div>
                   <button
+                    [routerLink]="['/detailspage', post.article]"
                     class="action-btn d-flex align-items-center justify-content-center rounded-circle"
                   >
                     <i class="fa-solid fa-chevron-left"></i>

@@ -38,14 +38,14 @@
           [class.active]="viewMode === 'list'"
           class="view-btn"
         >
-         <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <button
           (click)="setViewMode('grid')"
           [class.active]="viewMode === 'grid'"
           class="view-btn"
         >
-         <i class="fa-solid fa-grip"></i>
+          <i class="fa-solid fa-grip"></i>
         </button>
       </div>
     </div>
@@ -85,7 +85,10 @@
                   }}</span>
                 </div>
               </div>
-              <button class="arrow-btn">
+              <button
+                [routerLink]="['/detailspage', post.article]"
+                class="arrow-btn"
+              >
                 <i class="fas fa-chevron-left"></i>
               </button>
             </div>

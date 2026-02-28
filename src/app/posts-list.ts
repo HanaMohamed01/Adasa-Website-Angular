@@ -1,6 +1,6 @@
 export interface PostsList {
   id: number;
-  slug: string;
+  article: string;
   title: string;
   excerpt: string;
   content: string;
@@ -18,5 +18,3 @@ export interface Author {
   avatar: string;
   role: string;
 }
-
-

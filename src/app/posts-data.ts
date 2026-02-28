@@ -9,7 +9,7 @@ export class PostsData {
   posts: PostsList[] = [
     {
       id: 1,
-      slug: 'mastering-golden-hour-photography',
+      article: 'mastering-golden-hour-photography',
       title: 'إتقان تصوير الساعة الذهبية: دليل شامل',
       excerpt:
         'تعلم كيفية التقاط صور مذهلة خلال الساعة الذهبية مع نصائح احترافية حول الإضاءة والتكوين.',
@@ -31,7 +31,7 @@ export class PostsData {
     },
     {
       id: 2,
-      slug: 'portrait-photography-secrets',
+      article: 'portrait-photography-secrets',
       title: 'أسرار تصوير البورتريه: كيف تلتقط روح الشخصية',
       excerpt:
         'اكتشف تقنيات احترافية لتصوير بورتريهات تعبيرية تكشف عن شخصية الموضوع الحقيقية.',
@@ -53,7 +53,7 @@ export class PostsData {
     },
     {
       id: 3,
-      slug: 'landscape-photography-guide',
+      article: 'landscape-photography-guide',
       title: 'دليل تصوير المناظر الطبيعية: من المبتدئ إلى المحترف',
       excerpt:
         'استكشف تقنيات تصوير المناظر الطبيعية الخلابة وكيفية التقاط جمال الطبيعة بعدستك.',
@@ -75,7 +75,7 @@ export class PostsData {
     },
     {
       id: 4,
-      slug: 'camera-settings-basics',
+      article: 'camera-settings-basics',
       title: 'أساسيات إعدادات الكاميرا: مثلث التعريض الضوئي',
       excerpt:
         'افهم العلاقة بين فتحة العدسة وسرعة الغالق وحساسية ISO للتحكم الكامل في صورك.',
@@ -97,7 +97,7 @@ export class PostsData {
     },
     {
       id: 5,
-      slug: 'photo-composition-rules',
+      article: 'photo-composition-rules',
       title: 'قواعد التكوين الفوتوغرافي: كيف تجعل صورك أكثر جاذبية',
       excerpt:
         'تعلم قواعد التكوين الأساسية التي يستخدمها المصورون المحترفون لإنشاء صور مؤثرة بصرياً.',
@@ -119,7 +119,7 @@ export class PostsData {
     },
     {
       id: 6,
-      slug: 'mobile-photography-tips',
+      article: 'mobile-photography-tips',
       title: 'تصوير الهاتف المحمول: كيف تلتقط صوراً احترافية بهاتفك',
       excerpt:
         'اكتشف كيف تحول هاتفك الذكي إلى أداة تصوير قوية مع هذه النصائح والتقنيات.',
@@ -141,7 +141,7 @@ export class PostsData {
     },
     {
       id: 7,
-      slug: 'night-photography-techniques',
+      article: 'night-photography-techniques',
       title: 'تصوير الليل والنجوم: دليلك لالتقاط سماء الليل',
       excerpt:
         'تعلم كيفية تصوير النجوم ودرب التبانة والمناظر الليلية الساحرة مع هذه التقنيات المتقدمة.',
@@ -163,7 +163,7 @@ export class PostsData {
     },
     {
       id: 8,
-      slug: 'street-photography-guide',
+      article: 'street-photography-guide',
       title: 'تصوير الشارع: فن التقاط الحياة اليومية',
       excerpt:
         'اكتشف أسرار تصوير الشارع وكيفية توثيق اللحظات العفوية في الحياة اليومية.',
@@ -185,7 +185,7 @@ export class PostsData {
     },
     {
       id: 9,
-      slug: 'food-photography-basics',
+      article: 'food-photography-basics',
       title: 'تصوير الطعام: كيف تجعل أطباقك تبدو شهية',
       excerpt:
         'تعلم تقنيات تصوير الطعام الاحترافية لإنشاء صور تثير الشهية وتجذب العيون.',
@@ -207,7 +207,7 @@ export class PostsData {
     },
     {
       id: 10,
-      slug: 'wildlife-photography-tips',
+      article: 'wildlife-photography-tips',
       title: 'تصوير الحياة البرية: كيف تلتقط عجائب الطبيعة',
       excerpt:
         'دليل شامل لتصوير الحيوانات في بيئتها الطبيعية مع نصائح للمعدات والتقنيات.',
@@ -229,7 +229,7 @@ export class PostsData {
     },
     {
       id: 11,
-      slug: 'black-white-photography',
+      article: 'black-white-photography',
       title: 'التصوير بالأبيض والأسود: فن الضوء والظل',
       excerpt:
         'اكتشف جمال التصوير أحادي اللون وكيفية إنشاء صور قوية بدون ألوان.',
@@ -251,7 +251,7 @@ export class PostsData {
     },
     {
       id: 12,
-      slug: 'photo-editing-lightroom',
+      article: 'photo-editing-lightroom',
       title: 'أساسيات تعديل الصور في Lightroom',
       excerpt:
         'تعلم كيفية استخدام Adobe Lightroom لتحسين صورك وإنشاء أسلوب بصري مميز.',
@@ -273,7 +273,7 @@ export class PostsData {
     },
     {
       id: 13,
-      slug: 'macro-photography-world',
+      article: 'macro-photography-world',
       title: 'عالم التصوير الماكرو: اكتشف التفاصيل الخفية',
       excerpt:
         'انغمس في عالم التصوير المقرب واكتشف جمال التفاصيل الصغيرة التي تفوتنا بالعين المجردة.',
@@ -295,7 +295,7 @@ export class PostsData {
     },
     {
       id: 14,
-      slug: 'long-exposure-photography',
+      article: 'long-exposure-photography',
       title: 'التعريض الطويل: كيف تصور الحركة والزمن',
       excerpt:
         'تعلم تقنيات التعريض الطويل لإنشاء صور إبداعية تظهر الحركة بطريقة فنية ساحرة.',
@@ -317,7 +317,7 @@ export class PostsData {
     },
     {
       id: 15,
-      slug: 'wedding-photography-guide',
+      article: 'wedding-photography-guide',
       title: 'تصوير حفلات الزفاف: دليل المصور المحترف',
       excerpt:
         'تعلم أساسيات تصوير حفلات الزفاف من التحضير إلى تسليم الصور النهائية.',
@@ -339,7 +339,7 @@ export class PostsData {
     },
     {
       id: 16,
-      slug: 'drone-photography-basics',
+      article: 'drone-photography-basics',
       title: 'التصوير بالدرون: منظور جديد للعالم',
       excerpt:
         'اكتشف عالم التصوير الجوي وتعلم أساسيات استخدام الدرون لالتقاط صور من زوايا فريدة.',
@@ -361,7 +361,7 @@ export class PostsData {
     },
     {
       id: 17,
-      slug: 'product-photography-essentials',
+      article: 'product-photography-essentials',
       title: 'تصوير المنتجات: أساسيات التصوير التجاري',
       excerpt:
         'تعلم كيفية تصوير المنتجات بشكل احترافي لمتجرك الإلكتروني أو عملائك التجاريين.',
@@ -383,7 +383,7 @@ export class PostsData {
     },
     {
       id: 18,
-      slug: 'architecture-photography',
+      article: 'architecture-photography',
       title: 'تصوير العمارة: كيف تلتقط روح المباني',
       excerpt:
         'اكتشف تقنيات تصوير المباني والهندسة المعمارية بطريقة فنية تبرز جمالها وتفاصيلها.',
@@ -405,7 +405,7 @@ export class PostsData {
     },
     {
       id: 19,
-      slug: 'sports-action-photography',
+      article: 'sports-action-photography',
       title: 'تصوير الرياضة والحركة: تجميد اللحظة الحاسمة',
       excerpt:
         'تعلم تقنيات تصوير الأحداث الرياضية والحركة السريعة بوضوح ودقة احترافية.',
@@ -427,7 +427,7 @@ export class PostsData {
     },
     {
       id: 20,
-      slug: 'flash-photography-basics',
+      article: 'flash-photography-basics',
       title: 'أساسيات التصوير بالفلاش: تحكم كامل في الإضاءة',
       excerpt:
         'افهم كيفية استخدام الفلاش الخارجي لإنشاء إضاءة احترافية في أي موقف.',
@@ -449,7 +449,7 @@ export class PostsData {
     },
     {
       id: 21,
-      slug: 'travel-photography-tips',
+      article: 'travel-photography-tips',
       title: 'تصوير السفر: كيف توثق رحلاتك بصور لا تُنسى',
       excerpt: 'نصائح عملية لتصوير السفر تساعدك على التقاط جوهر كل مكان تزوره.',
       content:
@@ -470,7 +470,7 @@ export class PostsData {
     },
     {
       id: 22,
-      slug: 'color-theory-photography',
+      article: 'color-theory-photography',
       title: 'نظرية الألوان في التصوير: كيف تستخدم الألوان بذكاء',
       excerpt:
         'افهم كيف تؤثر الألوان على مشاعر المشاهد وكيف تستخدمها لتعزيز صورك.',
@@ -492,7 +492,7 @@ export class PostsData {
     },
     {
       id: 23,
-      slug: 'newborn-baby-photography',
+      article: 'newborn-baby-photography',
       title: 'تصوير المواليد: فن التقاط البراءة',
       excerpt: 'تعلم تقنيات تصوير الأطفال حديثي الولادة بأمان واحترافية.',
       content:
@@ -513,7 +513,7 @@ export class PostsData {
     },
     {
       id: 24,
-      slug: 'real-estate-photography',
+      article: 'real-estate-photography',
       title: 'تصوير العقارات: كيف تجعل المنزل يبيع نفسه',
       excerpt:
         'تعلم تقنيات تصوير العقارات التي تجعل المنازل تبدو أفضل ما يمكن.',
@@ -535,7 +535,7 @@ export class PostsData {
     },
     {
       id: 25,
-      slug: 'raw-vs-jpeg-explained',
+      article: 'raw-vs-jpeg-explained',
       title: 'RAW مقابل JPEG: متى تستخدم كلاً منهما',
       excerpt:
         'افهم الفرق بين صيغتي الصور الأكثر شيوعاً واختر الأنسب لاحتياجاتك.',
@@ -557,7 +557,7 @@ export class PostsData {
     },
     {
       id: 26,
-      slug: 'self-portrait-photography',
+      article: 'self-portrait-photography',
       title: 'تصوير البورتريه الذاتي: كن موضوعك الخاص',
       excerpt: 'تعلم كيف تصور نفسك بشكل احترافي وإبداعي دون الحاجة لمساعد.',
       content:
@@ -578,7 +578,7 @@ export class PostsData {
     },
     {
       id: 27,
-      slug: 'lens-guide-beginners',
+      article: 'lens-guide-beginners',
       title: 'دليل العدسات للمبتدئين: كيف تختار عدستك الأولى',
       excerpt:
         'افهم أنواع العدسات المختلفة واختر الأنسب لأسلوب تصويرك واحتياجاتك.',
@@ -600,7 +600,7 @@ export class PostsData {
     },
     {
       id: 28,
-      slug: 'minimalist-photography',
+      article: 'minimalist-photography',
       title: 'التصوير البسيط (Minimalist): قوة الفراغ',
       excerpt:
         'اكتشف جمال البساطة في التصوير وكيف تخلق صوراً قوية بعناصر قليلة.',

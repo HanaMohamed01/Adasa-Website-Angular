@@ -1,0 +1,273 @@
+.details-page {
+  background-color: #0c0c0c;
+  color: #ffffff;
+  min-height: 100vh;
+  padding-top: 80px;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5rem;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(12, 12, 12, 1) 100%
+  );
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 900px;
+}
+
+.breadcrumb-custom {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.breadcrumb-custom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-custom .active {
+  color: #ff6b00;
+}
+
+.category-badge {
+  background-color: #ff6b00;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.post-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.meta-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: #aaa;
+  margin-bottom: 3rem;
+}
+
+.author-card-floating {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.author-card-floating img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content-grid {
+  padding-bottom: 5rem;
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 100px;
+}
+
+.card-dark {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.toc-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.toc-icon {
+  background: rgba(246, 126, 0, 0.1);
+  color: #ff6b00;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #aaa;
+  transition: all 0.3s;
+}
+
+.toc-item:hover,
+.toc-item.active {
+  color: #fff;
+}
+
+.toc-number {
+  background: #2a2a2a;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.toc-item:hover .toc-number,
+.toc-item.active .toc-number {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.article-body {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.intro-box {
+  background: rgba(246, 126, 0, 0.05);
+  border: 1px solid rgba(246, 126, 0, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  scroll-margin-top: 110px;
+}
+
+.section-icon {
+  background: #ff6b00;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+.tag-pill {
+  background: #2a2a2a;
+  color: #aaa;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.tag-pill:hover {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.share-btn {
+  background: #2a2a2a;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.share-btn:hover {
+  background: #ff6b00;
+}
+
+.related-section {
+  border-top: 1px solid #333;
+  padding-top: 5rem;
+}
+
+.related-card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.related-card:hover {
+  transform: translateY(-10px);
+}
+
+.related-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .post-title {
+    font-size: 2.5rem;
+  }
+}

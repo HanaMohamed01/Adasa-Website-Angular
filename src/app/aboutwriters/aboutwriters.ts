@@ -1,10 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { PostsData } from '../posts-data';
 
 @Component({
   selector: 'app-aboutwriters',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './aboutwriters.html',
   styleUrl: './aboutwriters.css',
 })

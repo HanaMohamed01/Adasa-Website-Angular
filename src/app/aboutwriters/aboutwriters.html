@@ -1,31 +1,46 @@
 <section class="aboutWriters py-5" dir="rtl">
   <div class="container text-center">
     <div class="header-content mb-5">
-      <span class="badge-team">  <i class="fa-solid fa-circle text-white ms-2"></i>فريقنا </span>
+      <span class="badge-team">
+        <i class="fa-solid fa-circle text-white ms-2"></i>فريقنا
+      </span>
       <h2 class="section-title-writers mt-3">تعرف على كتابنا</h2>
-      <p class="section-subtitle">فريقنا من المصورين والكتاب ذوي الخبرة شغوفون بمشاركة معرفتهم مع المجتمع</p>
+      <p class="section-subtitle">
+        فريقنا من المصورين والكتاب ذوي الخبرة شغوفون بمشاركة معرفتهم مع المجتمع
+      </p>
     </div>
 
     <div class="row pt-4">
-      <div class="col-md-4 mb-5" *ngFor="let writer of writers">
-        <div class="writer-card">
-          <div class="image-container mx-auto">
-            <img [src]="writer.avatar" [alt]="writer.name" class="writer-img">
-            <div class="verified-badge">
-              <i class="fa-solid fa-check"></i>
+      @for (writer of writers; track writer.name) {
+        <div class="col-md-4 mb-5">
+          <div class="writer-card">
+            <div class="image-container mx-auto">
+              <img
+                [src]="writer.avatar"
+                [alt]="writer.name"
+                class="writer-img"
+              />
+              <div class="verified-badge">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+            <h3 class="writer-name">{{ writer.name }}</h3>
+            <p class="writer-role">{{ writer.role }}</p>
+
+            <div class="social-links mt-4">
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
             </div>
           </div>
-          <h3 class="writer-name">{{writer.name}}</h3>
-          <p class="writer-role">{{writer.role}}</p>
-
-          <div class="social-links mt-4">
-            <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
-          </div>
         </div>
-      </div>
+      }
     </div>
   </div>
 </section>
-
