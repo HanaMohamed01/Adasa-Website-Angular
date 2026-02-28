@@ -2,31 +2,57 @@
 
 Welcome to **عدسة**, a premium photography discovery platform built with Angular. This project is a modern, responsive web application designed to showcase photography articles, categories, and professional insights with a stunning, high-fidelity user interface.
 
+![Adasah Logo](public/logo.png)
+
+## 📖 Table of Contents
+
+- [عدسة (Adasah) - Photography Discovery Platform 📸](#عدسة-adasah---photography-discovery-platform-)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [🖼️ Core Pages](#️-core-pages)
+    - [1. **Home Page**](#1-home-page)
+    - [2. **Blog Page**](#2-blog-page)
+    - [3. **About Page**](#3-about-page)
+    - [4. **Details Page**](#4-details-page)
+  - [🌟 Key Features](#-key-features)
+  - [🛠️ Tech Stack](#️-tech-stack)
+  - [📂 Project Structure](#-project-structure)
+  - [📄 License](#-license)
+
+---
+
+## 🖼️ Core Pages
+
+### 1. **Home Page**
+
+- **Hero Section**: A stunning dark-themed hero section with glassmorphism effects and fluid typography.
+- **Category Stats**: Real-time counter cards showing article counts and reader statistics.
+- **Featured Articles**: A curated feed of premium photography articles with reading time indicators.
+
+### 2. **Blog Page**
+
+- **Article Grid**: A clean, organized grid of articles categorized by photography styles.
+- **Pagination**: Smooth navigation through multiple pages of content.
+
+### 3. **About Page**
+
+- **Our Values**: Insights into the mission and vision of the Adasah platform.
+- **Meet the Authors**: Profiles of the professional photographers and writers behind the content.
+
+### 4. **Details Page**
+
+- **Deep Dive**: Full-screen article reading experience with optimized typography and high-quality imagery.
+
+---
+
 ## 🌟 Key Features
 
-### 1. **Premium Hero Section**
+- 🌍 **RTL Support**: Built from the ground up to support Arabic-first layouts and typography.
+- 📱 **Fully Responsive**: Optimized for all devices—from smartphones to large desktop monitors.
+- ✨ **Modern UI**: Uses glassmorphism, fluid animations (CSS `clamp()`), and premium color palettes.
+- 🔍 **Interactive Categories**: Dynamic data binding for filtering and exploring photography genres.
+- 🛠️ **Error Handling**: Custom 404 page to maintain user engagement.
 
-- **Fluid Design**: A stunning dark-themed hero section with custom grid backgrounds and glassmorphism effects.
-- **Dynamic Content**: Arabic-first typography with polished animations and clear calls to action.
-- **Fully Responsive**: Optimized for all screen sizes using CSS `clamp()` and Bootstrap grid.
-
-### 2. **Interactive Category Stats**
-
-- Real-time data visualization showing article counts, reader stats, and more.
-- **Smart Layout**: Automatically adjusts grid columns based on screen size (e.g., maintaining 2 cards per row on mobile).
-- **Dynamic Icons**: Uses FontAwesome icons rendered dynamically.
-
-### 3. **Featured Articles Feed**
-
-- **Premium Article Cards**: Responsive horizontal cards with high-quality photography, reading time indicators, and author status dots.
-- **Dynamic Binding**: Powered by a structured data model providing titles, excerpts, and meta-information.
-- **RTL Support**: Fully localized and optimized for Right-to-Left (Arabic) layout.
-
-### 4. **Modern UI/UX**
-
-- **Responsive Navigation**: A clean, blurred navbar that provides a premium experience on both mobile and desktop.
-- **404 Custom Page**: A beautifully designed error page that keeps users engaged.
-- **Performance**: Built with Angular's latest features for speed and reliability.
+---
 
 ## 🛠️ Tech Stack
 
@@ -34,6 +60,21 @@ Welcome to **عدسة**, a premium photography discovery platform built with Ang
 - **Styling**: [Vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) with modern features (clamp, variables, glassmorphism)
 - **UI Framework**: [Bootstrap 5](https://getbootstrap.com/)
 - **Icons**: [FontAwesome 6](https://fontawesome.com/) & [Bootstrap Icons](https://icons.getbootstrap.com/)
+
+---
+
+## 📂 Project Structure
+
+Key directories and files:
+
+- `src/app/home`: Main landing page components.
+- `src/app/bloghome`: Blog listing and pagination.
+- `src/app/detailespage`: Individual article view.
+- `src/app/aboutmain`: About page and team information.
+- `src/app/posts-data.ts`: Central data store for articles and categories.
+
+---
+
 ## 📄 License
 
 This project is for educational/assignment purposes as part of the Route Angular course.
