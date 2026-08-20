@@ -74,6 +74,7 @@
               type="search"
               name="navbarSearch"
               [(ngModel)]="searchQuery"
+              (input)="searchAsYouType()"
               placeholder="ابحث في المقالات..."
               aria-label="البحث في المقالات"
               autofocus

@@ -16,6 +16,16 @@ export class Navbar {
 
   constructor(private router: Router) {}
 
+  searchAsYouType() {
+    const query = this.searchQuery.trim();
+
+    this.router.navigate(['/bloghome'], {
+      queryParams: query ? { search: query } : {},
+      fragment: 'article-search',
+      replaceUrl: true,
+    });
+  }
+
   submitSearch() {
     const query = this.searchQuery.trim();
 
