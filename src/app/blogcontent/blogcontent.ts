@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PostsData } from '../posts-data';
 import { PostsList } from '../posts-list';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-blogcontent',
@@ -14,6 +14,7 @@ import { RouterLink } from '@angular/router';
 })
 export class Blogcontent implements OnInit {
   private postsData = inject(PostsData);
+  private route = inject(ActivatedRoute);
 
   allPosts: PostsList[] = [];
   filteredPosts: PostsList[] = [];
@@ -38,7 +39,11 @@ export class Blogcontent implements OnInit {
     ];
     this.categories = ['جميع المقالات', ...uniqueCategories];
 
-    this.applyFilters();
+    this.route.queryParamMap.subscribe((params) => {
+      this.searchQuery = params.get('search') ?? '';
+      this.currentPage = 1;
+      this.applyFilters();
+    });
   }
 
   filterByCategory(category: string) {

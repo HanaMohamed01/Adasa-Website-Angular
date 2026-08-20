@@ -14,6 +14,7 @@
   border-radius: 8px;
   font-size: 14px;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .cat-tab:hover {
@@ -71,7 +72,7 @@
 
 .posts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 30px;
 }
 
@@ -274,14 +275,78 @@
 
 @media (max-width: 768px) {
   .filter-bar {
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start !important;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start !important;
+      flex-wrap: wrap;
+    }
+    .categories-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: 100%;
+      order: 1;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .search-box {
+      width: auto;
+      order: 2;
+      flex: 0 0 auto;
+      min-width: 160px;
   }
-  .search-input {
-    width: 100%;
+    .search-input {
+      width: 100%;
+      max-width: 360px;
+      box-sizing: border-box;
+      display: inline-block;
+    }
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
   }
-  .posts-grid {
-    grid-template-columns: 1fr;
+
+  @media (max-width: 991px) {
+    .filter-bar {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start !important;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .categories-tabs {
+      order: 1;
+      width: 100%;
+      flex: 1 1 100%;
+      min-width: 0;
+      justify-content: flex-start;
+      gap: 8px;
+      padding-left: 6px;
+    }
+    .cat-tab {
+      flex: 0 0 auto;
+      margin: 0;
+    }
+    .search-box {
+      width: 100%;
+      order: 2;
+      flex: 0 0 100%;
+    }
+    .search-input {
+      width: 100%;
+      max-width: 100%;
+    }
   }
-}
+
+  @media (min-width: 700px) and (max-width: 991px) {
+    .posts-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .posts-grid.grid-view {
+      display: grid;
+    }
+  }
